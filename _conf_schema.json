@@ -1,0 +1,15 @@
+{
+  "api_url": {
+    "description": "API接口地址",
+    "type": "string",
+    "hint": "请填写完整的API接口URL，用于签到和获取cookie",
+    "obvious_hint": true,
+    "default": "https://dmguo.cn"
+  },
+  "cookie_expire_minutes": {
+    "description": "Cookie有效期（分钟）",
+    "type": "int",
+    "hint": "cookie的有效时间，单位为分钟",
+    "default": 30
+  }
+}
