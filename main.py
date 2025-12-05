@@ -4,8 +4,13 @@ from astrbot.api import logger
 from astrbot.api import AstrBotConfig
 import astrbot.api.message_components as Comp
 from .data import SignData
-
-@register("astrbot_plugin_sign", "呆小布", "QQ签到插件", "1.1.6", "https://github.com/diwang23/astrbot_plugin_sign-main")
+@register(
+    name="astrbot_plugin_sign",
+    desc="/签到 WordPress 子比q群签到插件！配合WordPress子比签到插件使用",
+    version="v1.1.6",
+    author="呆小布",
+    repo="https://github.com/diwang23/astrbot_plugin_sign-main",
+)
 class SignPlugin(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
         super().__init__(context)
