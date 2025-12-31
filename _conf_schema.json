@@ -4,7 +4,14 @@
     "type": "string",
     "hint": "请填写完整的API接口URL，用于签到和获取cookie",
     "obvious_hint": true,
-    "default": "https://dmguo.cn"
+    "default": "示例:https://www.dmguo.cn"
+  },
+  "api_key": {
+    "description": "API密钥",
+    "type": "string",
+    "hint": "请填写API访问密钥或Token",
+    "obvious_hint": true,
+    "default": ""
   },
   "cookie_expire_minutes": {
     "description": "Cookie有效期（分钟）",

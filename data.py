@@ -10,7 +10,7 @@ class SignData:
         self.api_url = api_url.rstrip('/')
         self.cookie_expire_minutes = cookie_expire_minutes
     
-    async def get_cookie(self, qq: str) -> str:
+    async def get_cookie(self, qq,key:str) -> str:
         """
         获取cookie
         参数：
@@ -19,7 +19,7 @@ class SignData:
             cookie字符串 或 错误信息
         """
         try:
-            url = f"{self.api_url}/wp-json/taoxi/v1/omekschrwqscr?email={qq}@qq.com&expire_minutes={self.cookie_expire_minutes}"
+            url = f"{self.api_url}/wp-json/taoxi/v1/terminal?email={qq}@qq.com&expire_minutes={self.cookie_expire_minutes}&token={key}"
             
             async with httpx.AsyncClient() as client:
                 response = await client.get(
