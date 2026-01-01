@@ -26,13 +26,9 @@ class SignData:
                     url,
                     headers={'Accept': 'application/json'}
                 )
-                
-                if response.status_code != 200:
-                    return "用户不存在"
-                
                 data = response.json()
-                if not data.get('success', True):
-                    return "用户不存在"
+                if not data.get('success', True) or response.status_code != 200:
+                    return data.get('message', "请求失败")
                 
                 # 获取所有Set-Cookie头
                 set_cookie_headers = response.headers.get_list('set-cookie')

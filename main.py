@@ -5,9 +5,9 @@ from astrbot.api import AstrBotConfig
 import astrbot.api.message_components as Comp
 from .data import SignData
 @register(
-    name="astrbot_plugin_sign",
+    name="astrbot_plugin_dmguoprcs-main",
     desc="/签到 WordPress 子比q群签到插件！配合WordPress子比签到插件使用",
-    version="v1.1.6",
+    version="v1.1.7",
     author="呆小布",
     repo="https://github.com/diwang23/astrbot_plugin_dmguoprcs-main",
 )
@@ -24,7 +24,7 @@ class SignPlugin(Star):
         logger.info(f"成功获取token:{self.api_key}")
         cookie_expire = self.config.get('cookie_expire_minutes', 30)
         logger.info(f"成功获取cookie过期时间: {cookie_expire} 分钟")
-        self.data_handler = SignData(api_url, cookie_expire ,self.api_key)
+        self.data_handler = SignData(api_url, cookie_expire)
     
     @filter.command("签到")
     async def sign_command(self, event: AstrMessageEvent):

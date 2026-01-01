@@ -6,6 +6,13 @@
     "obvious_hint": true,
     "default": "https://dmguo.cn"
   },
+  "api_key": {
+    "description": "API密钥",
+    "type": "string",
+    "hint": "请填写API访问密钥或Token",
+    "obvious_hint": true,
+    "default": "示例:XOvHGTSYP2uRoc4"
+  },
   "cookie_expire_minutes": {
     "description": "Cookie有效期（分钟）",
     "type": "int",
