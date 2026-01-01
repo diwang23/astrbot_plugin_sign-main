@@ -46,8 +46,8 @@ class SignPlugin(Star):
             logger.info(f"正在为QQ {qq} 获取cookie...")
             cookie = await self.data_handler.get_cookie(qq, self.api_key)
             
-            if cookie in ["用户不存在", "请求异常"]:
-                yield event.plain_result(f"获取cookie失败: {cookie}")
+            if cookie in ["用户不存在","为了您的安全，管理员签到已关闭","Token验证失败","Token不能为空"]:
+                yield event.plain_result(f"{cookie}")
                 return
             
             logger.info(f"成功获取cookie: {cookie}...")
