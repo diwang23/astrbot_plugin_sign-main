@@ -6,7 +6,7 @@ import astrbot.api.message_components as Comp
 from .data import SignData
 
 @register(
-    name="astrbot_plugin_sign",
+    name="astrbot_plugin_dmguoprcs-main",
     desc="/签到 WordPress 子比q群签到插件！配合WordPress子比签到插件使用",
     version="v1.1.6",
     author="呆小布",
