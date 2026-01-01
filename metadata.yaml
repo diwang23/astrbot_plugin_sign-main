@@ -1,6 +1,6 @@
-name: astrbot_plugin_sign # 这是你的插件的唯一识别名。
+name: astrbot_plugin_dmguoprcs-main # 这是你的插件的唯一识别名。
 display_name: 子比签到插件
 desc: /签到 网站自动签到 # 插件简短描述
-version: v1.1.6 # 插件版本号。格式：v1.1.1 或者 v1.1
+version: v1.1.8 # 插件版本号。格式：v1.1.1 或者 v1.1
 author: 呆小布 # 作者
-repo: https://github.com/diwang23/astrbot_plugin_dmguoprcs-main # 插件的仓库地址
+repo: https://github.com/DaiXiaobu510/astrbot_plugin_dmguoprcs-main # 插件的仓库地址
